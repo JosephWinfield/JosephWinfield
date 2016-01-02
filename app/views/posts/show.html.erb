@@ -1,0 +1,11 @@
+<div class="show-post-wrapper">
+  <h1 class="show-post-title post-title-id-<%= @post.id %>">
+    <%= @post.title %>
+  </h1>
+
+  <span class="show-post-date"><%=@post.created_at.strftime("%B %d, %Y")%></span>
+
+  <div class="show-post-body post-body-id-<%= @post.id %>">
+    <%= simple_format @post.body %>
+  </div>
+</div>

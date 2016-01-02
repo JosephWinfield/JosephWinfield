@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JosephWinfield</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <title>Joseph Winfield</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="wrapper">
+    <header class="header">
+        <h1 class="headline">Joseph Winfield</h1>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <%= link_to 'Articles', root_path %>
+            </li>
+            <li>
+              <%= link_to 'Photography', photos_path %>
+            </li>
+            <li>
+              <%= link_to 'Biography', bios_path %>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <% flash.each do |key, value| %>
+      <%= value %>
+    <% end %>
 
-<%= yield %>
+    <%= yield %>
 
+  </div>
 </body>
 </html>

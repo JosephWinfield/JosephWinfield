@@ -1,0 +1,66 @@
+.show-post-title {
+  font-family: 'IntroHeadB-H2Base';
+  font-size: 2.6875rem;
+  font-weight: normal;
+  text-align: center;
+  padding; 0;
+  margin: 0 auto;
+}
+
+.show-post-date {
+  font-family: 'klinic_slabmedium_italic';
+  font-size: 1.375rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2.3125rem;
+}
+
+.show-post-date::before {
+  content: 'x';
+}
+
+.show-post-date::after {
+  content: "y";
+}
+
+.show-post-date::before, .show-post-date::after {
+  font-family: 'IntroGoodies-BannersAndEndings';
+  font-size: 1.375rem;
+  display: inline-block;
+  position: relative;
+  top: 0.25rem;
+  padding: 0 0.5rem;
+}
+
+.show-post-body {
+  font-family: 'klinic_slabbook';
+  font-size: 1.25rem;
+}
+
+.show-post-body p {
+  margin: 0;
+  padding-bottom: 3.125rem;
+}
+
+@media (min-width: 900px) {
+  .show-post-wrapper {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .show-post-title {
+    font-size: 4.6875rem;
+    padding-top: 3.65625rem;
+  }
+
+  .show-post-date {
+    font-size: 1.4375rem;
+    padding: 2.90625rem 0 6.5rem;
+  }
+
+  .show-post-body {
+    font-size: 1.75rem;
+  }
+}

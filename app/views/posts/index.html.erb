@@ -1,0 +1,17 @@
+<div class="body">
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <h3 class="post-title post-title-<%=post.id%>"><%= link_to post.title, post_path(post) %></h3>
+      <span class="post-date"><%=post.created_at.strftime("%B %d, %Y")%></span>
+      <div class="post-description post-description-<%=post.id%>">
+        <%=post.description%>
+      </div>
+      <span><%=link_to "Read more", post_path(post), class: "read-more-link"%></span>
+      <br>
+      <span class="post-divider">5</span>
+
+    </li>
+    <% end %>
+  </ul>
+</div>
