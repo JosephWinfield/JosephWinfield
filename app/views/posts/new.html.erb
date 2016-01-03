@@ -1,12 +1,14 @@
-<%= form_for(@post) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title, placeholder: "Title" %>
-  <br>
-  <%= f.label :description %>
-  <%= f.text_area :description, placeholder: "Description" %>
-  <br>
-  <%= f.label :body %>
-  <%= f.text_area :body, placeholder: "Body" %>
-  <br>
-  <%= f.submit "Add Blog Post", class: "submit" %>
-<% end %>
+<div class="post-form">
+  <%= form_for(@post) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: "Title", class: "form-title" %>
+    <br>
+    <%= f.label :description %>
+    <%= f.text_area :description, placeholder: "Description", class: "form-description"%>
+    <br>
+    <%= f.label :body %>
+    <%= f.text_area :body, placeholder: "Body", class: "form-body" %>
+    <br>
+    <%= f.submit "Add Blog Post", class: "form-submit" %>
+  <% end %>
+</div>

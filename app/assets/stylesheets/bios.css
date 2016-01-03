@@ -1,0 +1,45 @@
+.bio-headline {
+  font-family: 'IntroHeadB-H2Base';
+  font-weight: normal;
+  font-size: 2.6875rem;
+  margin: 0;
+  padding: 0.625rem 0 2.8125rem;
+}
+
+.joe-img {
+  height: 12.75rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 2.8125rem;
+}
+
+.bio-body {
+  font-family: 'klinic_slabbook';
+  font-size: 1.25rem;
+}
+
+.bio-body p {
+  margin: 0;
+  padding-bottom: 2.9375rem;
+}
+
+@media (min-width: 700px) {
+  .bio-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .joe-img {
+    float: right;
+    margin-left: 50px;
+  }
+
+  @media (min-width: 900px) {
+    .bio-wrapper {
+      width: 67.5%;
+    }
+
+    .bio-headline {
+      padding-bottom: 2.125rem;
+    }
+  }
+}
