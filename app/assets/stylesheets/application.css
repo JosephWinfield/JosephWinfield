@@ -37,7 +37,7 @@
    margin: 0;
  }
 
- ul {
+ .navigation ul {
    margin: 0;
  }
 
@@ -50,7 +50,6 @@
    font-family: 'IntroHeadBUC-H2Base';
    display: inline-block;
    font-size: 1.125rem;
-   /*Change Padding to a tag!!!*/
    padding: 0.90625rem;
    margin: 0 auto;
  }
@@ -96,5 +95,9 @@
      display: flex;
      justify-content: center;
      align-items: center;
+   }
+
+   .navigation li {
+     font-size: 1.875rem;
    }
  }

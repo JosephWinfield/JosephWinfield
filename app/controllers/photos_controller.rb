@@ -1,4 +1,9 @@
 class PhotosController < ApplicationController
+  before_action :authorize_user, except: [
+    :index,
+    :show
+  ]
+
   def index
     @photos = Photo.all
   end
@@ -26,7 +31,12 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:photo, :description)
+    params.require(:photo).permit(:url, :description)
   end
 
+  def authorize_user
+    if !user_signed_in? || !current_user.admin?
+      redirect_to root_path
+    end
+  end
 end

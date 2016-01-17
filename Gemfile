@@ -4,6 +4,8 @@ gem "carrierwave"
 gem "fog"
 gem "fog-aws"
 gem 'mini_magick'
+gem 'simple_form'
+gem 'devise'
 
 gem 'rails', '4.2.4'
 gem 'pg'
