@@ -1,0 +1,13 @@
+<h1 class="thumbnail-title">Photographs I've Taken</h1>
+
+<div class="body">
+
+  <ul>
+    <% @photos.each do |photo| %>
+    <li class="thumbnail-container">
+      <a href="<%= photo_path(photo.id)%>"> <img src="<%= photo.url %>" class="thumbnail"></a>
+    </li>
+    <% end %>
+  </ul>
+
+</div>

@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+ :root {
+   font-size: 16px;
+ }
+
+ body {
+   background-image: url('default-background.png');
+   background-size: 476px 476px;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ .wrapper {
+   padding: 0 0.9375rem;
+ }
+
+ .headline {
+   font-family: 'IntroScriptB-LBase';
+   font-weight: normal;
+   font-size: 2.875rem;
+   text-align: center;
+   padding: 2.5rem 0 1rem 0;
+   margin: 0;
+ }
+
+ ul {
+   margin: 0;
+ }
+
+ .navigation {
+   padding-bottom: 1.84375rem;
+   text-align: center;
+ }
+
+ .navigation li {
+   font-family: 'IntroHeadBUC-H2Base';
+   display: inline-block;
+   font-size: 1.125rem;
+   /*Change Padding to a tag!!!*/
+   padding: 0.90625rem;
+   margin: 0 auto;
+ }
+
+ .navigation li:first-child {
+   padding-left: 0;
+ }
+
+ .navigation li:last-child {
+   padding-right: 0;
+ }
+
+
+ a {
+   text-decoration: none;
+   color: #333;
+ }
+
+ ul {
+   padding: 0;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ @media (min-width: 500px) {
+   .header {
+     margin: 0 auto;
+   }
+
+   .headline::before {
+     display: inline-block;
+     content: url('monogram.svg');
+     width: 6.25rem;
+     height: 6.25rem;
+     vertical-align: middle;
+     padding-right: 1rem;
+   }
+
+   .headline {
+     font-size: 2.84375rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }

@@ -5,10 +5,10 @@
 
 textarea, input {
   border-radius: 5px;
-  width: 500px;
+  width: 75%;
   text-align: center;
   display: block;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 
 textarea {

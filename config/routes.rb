@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root 'posts#index'
+  root "posts#index"
 
   resources :posts
   resources :photos
-  resources :bios
+
+  get 'biography', to: 'bios#index'
 end
