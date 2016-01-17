@@ -14,12 +14,15 @@
  *= require_self
  */
 
+ //= depend_on_asset 'default-background.png'
+ //= depend_on_asset 'monogram.svg'
+
  :root {
    font-size: 16px;
  }
 
  body {
-   background-image: url('default-background.png');
+   background-image: url('<%= asset_path("default-background.png") %>');
    background-size: 476px 476px;
    -webkit-font-smoothing: antialiased;
  }
@@ -83,7 +86,7 @@
 
    .headline::before {
      display: inline-block;
-     content: url('monogram.svg');
+     content: url('<%= asset_path("monogram.svg") %>');
      width: 6.25rem;
      height: 6.25rem;
      vertical-align: middle;
