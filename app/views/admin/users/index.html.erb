@@ -1,0 +1,6 @@
+<h1>Users</h1>
+
+<% @users.each do |user| %>
+  </h4><%= user.first_name %> <%= user.email %></h4>
+  <%= button_to "Delete User", admin_user_path(user), class: "button", method: "delete", id: user.id %>
+<% end %>

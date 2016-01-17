@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  before_action :authorize_user, except: [
+    :index,
+    :show
+  ]
 
   def index
     @posts = Post.order("id DESC").all
@@ -36,5 +40,11 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :description, :body)
   end
-  
+
+  def authorize_user
+    if !user_signed_in? || !current_user.admin?
+      redirect_to root_path
+    end
+  end
+
 end
