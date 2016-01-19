@@ -3,14 +3,14 @@
   font-weight: normal;
   font-size: 2.6875rem;
   margin: 0;
-  padding: 0.625rem 0 2.8125rem;
+  padding: 0.625rem 0 1.875rem;
 }
 
 .joe-img {
   height: 12.75rem;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 2.8125rem;
+  margin: 0 auto 1.875rem;
 }
 
 .bio-body {
@@ -20,7 +20,11 @@
 
 .bio-body p {
   margin: 0;
-  padding-bottom: 2.9375rem;
+  padding-bottom: 1.875rem;
+}
+
+p a {
+  border-bottom: dashed 1px grey;
 }
 
 @media (min-width: 700px) {
@@ -28,18 +32,29 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .bio-headline {
+    padding-bottom: 2.8125rem;
+  }
+
   .joe-img {
     float: right;
-    margin-left: 50px;
+    margin: 0 auto 2.8125rem 3.125rem;
+    padding-bottom:
   }
 
-  @media (min-width: 900px) {
-    .bio-wrapper {
-      width: 67.5%;
-    }
-
-    .bio-headline {
-      padding-bottom: 2.125rem;
-    }
+  .bio-body p {
+    padding-bottom: 2.9375rem;
   }
 }
+
+@media (min-width: 900px) {
+  .bio-wrapper {
+    width: 67.5%;
+  }
+
+  .bio-headline {
+    padding-bottom: 2.125rem;
+  }
+}
+2.8125rem
