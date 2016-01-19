@@ -59,9 +59,6 @@
   .body {
     padding: 0;
   }
-
-
-
 }
 
 @media (min-width: 700px) {
@@ -93,8 +90,6 @@
   .post-date {
     font-size: 1.125rem;
   }
-
-
 }
 
 @media (min-width: 900px) {
@@ -116,8 +111,6 @@
   .navigation li {
     font-size: 1.5625rem;
   }
-
-
 
   .body {
     padding-top: 5.125rem;
@@ -144,23 +137,4 @@
   .post-divider {
     padding: 2.6875rem 0 3.0625rem 0;
   }
-
-
-
-
-
-
-  /*.headline {
-    display: block;
-    float: left;
-  }
-
-  .navigation {
-    float: right;
-  }
-
-  .body {
-    display: inline-block;
-  }*/
-
 }
