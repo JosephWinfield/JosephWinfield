@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root "posts#index"
+  root "bios#index"
 
   resources :posts
   resources :photos
