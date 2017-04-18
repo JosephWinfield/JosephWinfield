@@ -6,6 +6,12 @@
     <% @photos.each do |photo| %>
     <li class="thumbnail-container">
       <a href="<%= photo_path(photo.id)%>"> <img src="<%= photo.url %>" class="thumbnail"></a>
+
+      <%if user_signed_in?%>
+        <%if current_user.admin?%>
+          <%=link_to "Fuck it. . . . delete this shit", admin_photo_path(photo.id), method: :delete, data: { confirm: 'Are you sure?' }%>
+        <%end%>
+      <%end%>
     </li>
     <% end %>
   </ul>
